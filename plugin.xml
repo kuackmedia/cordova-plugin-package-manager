@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-package-manager" version="1.0.0">
+    <name>Cordova Plugin Package Manager</name>
+    <license>Apache 2.0</license>
+    <keywords>cordova,android</keywords>
+    <js-module src="www/packageManager.js" name="packageManager">
+        <clobbers target="window.plugins.packageManager" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PackageManagerPlugin" >
+                <param name="android-package" value="com.kuack.plugins.PackageManagerPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="android/PackageManagerPlugin.java" target-dir="src/com/kuack/plugins" />
+    </platform>
+</plugin>

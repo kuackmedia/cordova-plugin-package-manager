@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-package-manager",
+  "version": "1.0.0",
+  "description": "Cordova Plugin Package Manager",
+  "cordova": {
+    "id": "cordova-plugin-package-manager",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuackmedia/cordova-plugin-package-manager"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.1.0"
+      },
+      "4.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "6.0.0": {
+        "cordova": ">100"
+      }
+    }
+  }
+}
